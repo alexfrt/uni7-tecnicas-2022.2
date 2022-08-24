@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.icon {
+    width: 60px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.card {
+    padding: 30px;
+}
+
+.label-float input {
+    width: 350px;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #42a8fc;
+    background-color: transparent;
+    outline: none;
+    /* min-width: 180px; */
+    font-size: 1rem;
+    transition: all .3s ease-out;
+}
+
+.label-float {
+    font-size: 1rem;
+    position: relative;
+    padding-top: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float label {
+    color: #B9B9B9;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus+label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #B9B9B9;
+}
+
+button {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #42a8fc;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #008AFF;
+}
+
+.p {
+    font-size: .8rem;
+    color: #B9B9B9;
+    font-weight: bold;
+}
+
+a {
+    font-size: .8rem;
+    color: #6CBCFF;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    margin-left: 125px;
+}
+
+a:hover {
+    color: #008AFF;
+}
+
+.checkbox {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.caixa {
+    position: relative;
+    top: 2px;
+    margin-right: 0px;
+    border-radius: 5px;
+    border: 2px solid #008AFF;
+}
+.cadeado{
+    width: 20px;
+    position: relative;
+    right: 23px;
+    top: 5px;
+}
