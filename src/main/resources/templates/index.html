@@ -1,60 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Paulo</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-<div class="box">
-    <div class="contents">
-        <div class="ij">IJ</div>
-        <div class="line"></div>
-    </div>
-
-</div>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body{
-        background:linear-gradient(135deg, rgb(194, 14, 230),yellow, rgb(250, 0, 0));
-        height: 100vh;
-    }
-    .box{
-        display: flex;
-        align-items: center;
-        height: 500px;
-        width: 500px;
-        background-color: rgb(14, 14, 14);
-        margin-top: 70px;
-        margin-left: 420px;
-        border: solid 5px rgb(32, 62, 231);
-        color: white;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 450px;
-    }
-    .ij{
-        margin: 0;
-    }
-    .contents{
-        height: 500px;
-        width: 500px;
-        margin-bottom: 150px;
-        margin-left: 10px;
-    }
-
-    .line{
-        border-bottom: solid 10px white;
-        margin-left: 10px;
-        width: 280px;
-        margin-bottom: 50px;
-    }
-</style>
+    <header>
+        <!-- <img src="./img/imgHospital.png" alt=""> -->
+    </header>
+    <section class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="./img/pharmacy.png" alt="" class="icon">
+            </div>
+            <div class="label-float">
+                <input type="text" class="usuario" placeholder="">
+                <label for="usuario">Username</label>
+            </div>
+            <div class="label-float">
+                <input type="password" class="senha" placeholder="">
+                <label for="usuario">Password</label>
+                    <img src="./img/cadeado.png" alt="" class="cadeado">
+            </div>
+            <div class="justify-center">
+                <div class="checkbox">
+                    <input type="checkbox" class="caixa" id="remind-pass">
+                    <label for="remind-pass" class="p">Remember me
+                        <a href="#">Forget the password?</a>
+                    <label class="p">
+                </div>
+                <div class="justify-center">
+                    <button>Sign In</button>
+                </div>
+            </div>
+    </section>
 </body>
+
 </html>
