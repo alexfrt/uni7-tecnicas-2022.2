@@ -4,57 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Paulo</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="pharmacy 1.png">
+    <title>Login/Med</title>
 </head>
 <body>
+        <div class="content">
+            <section>
+                <div class="caixaLogin">
+                    <!-- <div class="part1"><img class="imagem" src="/Imagens/pexels-arthur-ogleznev-1296265.jpg"></div>        -->
+                    <div class="part2">
+                        <div class="login">
+                            <img class="iconeMed" src="pharmacy 1.png">
+                            <h1 style="font-family: sans-serif; font-size: 50px; margin-top: 30px;">Login</h1>
+                            <div class="arealogin">
+                                <input id="name" type="text" placeholder="Username">
+                                <input id="name" type="password" placeholder="Password">
+                            </div>
+                            <div class="extra">
+                                <div style="font-size: 20px">
+                                    <input style="height: 18px; width: 18px" id="remember" type="checkbox">
+                                    <label style="color: rgb(146, 146, 146);" for="remember">Remember me</label>
+                                </div>
+                                <div>
+                                    <p style="color: rgb(0, 174, 255);">Forget the password?</p>
+                                </div>
+                            </div>
+                            <button>Sing in</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .part1{
+            width: 50vh;
+        }
+        .part2{
+            width: 100pc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content section{
+            background-color: rgb(235, 227, 224);
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .imagem{
+            position: relative;
+            width: 50vh;
+            height: 800px;
+        }
+        .caixaLogin{
+            background-image: url("/limpar-historico-medico_53876-97927 (1).png");
+            display: flex;
+            flex-direction: row;
+            width: 1500px;
+            height: 800px;
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(248, 248, 248);
+            width: 900px;
+            height: 700px;
+            border-radius: 10px;
+            align-items: center;
+        }
+        .iconeMed{
+            margin-top: 50px;
+            width: 100px;
+            height: 100px;
+        }
+        .arealogin{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        #name{
+            height: 30px;
+            outline: 0;
+            border: none;
+            width: 400px;
+            font-size: 20px;
+            font-family: sans-serif;
+            background-color: rgb(248, 248, 248);
+            border-bottom: 1px solid rgb(89, 193, 235);
+        }
+        input::placeholder{
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        button{
+            margin-top: 80px;
+            border: none;
+            background-color:rgb(0, 183, 255);
+            color: white;
+            font-size: 20px;
+            height: 50px;
+            width: 150px;
+            border-radius: 10px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(61, 168, 255);
+        }
+        .extra{
+            display: flex;
+            gap: 120px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
 
-<div class="box">
-    <div class="contents">
-        <div class="ij">IJ</div>
-        <div class="line"></div>
-    </div>
-
-</div>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body{
-        background:linear-gradient(135deg, rgb(194, 14, 230),yellow, rgb(250, 0, 0));
-        height: 100vh;
-    }
-    .box{
-        display: flex;
-        align-items: center;
-        height: 500px;
-        width: 500px;
-        background-color: rgb(14, 14, 14);
-        margin-top: 70px;
-        margin-left: 420px;
-        border: solid 5px rgb(32, 62, 231);
-        color: white;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 450px;
-    }
-    .ij{
-        margin: 0;
-    }
-    .contents{
-        height: 500px;
-        width: 500px;
-        margin-bottom: 150px;
-        margin-left: 10px;
-    }
-
-    .line{
-        border-bottom: solid 10px white;
-        margin-left: 10px;
-        width: 280px;
-        margin-bottom: 50px;
-    }
-</style>
+        #remember:hover{
+            cursor: pointer;
+        }
+        p:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
 </body>
 </html>
